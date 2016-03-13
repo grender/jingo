@@ -51,6 +51,14 @@
           }
         }
       }
+      var mermaidConfig = {
+//        startOnLoad: false
+      };
+      mermaid.initialize(mermaidConfig);
+/*      $(".mermaid").on('show' ,function(el) {
+        console.log(arguments)
+      })
+*/
 
       $("#login").attr("href", function () {
         return $(this).attr("href").replace("destination", "destination=" + encodeURIComponent(location.pathname));
